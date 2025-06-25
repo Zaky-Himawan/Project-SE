@@ -1,258 +1,255 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="finance-order">
-      <div class="div">
-        <img class="backgrounddasar" src="../img/Background Petrokimia.jpg" alt="">
-        <div class="overlap">
-          <img class="mask-group"/>
-          <div class="group">
-            <img class="img" src="../img/kategori.svg" />
-            <div class="text-wrapper">Invoice</div>
-          </div>
-          <div class="group-2">
-            <img class="img" src="../img/task square.svg" />
-            <div class="text-wrapper-2">Financial Report</div>
-          </div>
-          <div class="group-3">
-            <img class="img" src="../img/message.svg" />
-            <div class="text-wrapper-3">Order</div>
-          </div>
-          <div class="group-4">
-            <div class="overlap-group">
-              <div class="overlap-2">
-                <img class="vector" src="img/vector-11.svg" />
-                <div class="text-wrapper-4">Order</div>
-              </div>
-              <div class="overlap-group-wrapper">
-                <div class="div-wrapper"><div class="text-wrapper-5">Invoice sent</div></div>
-              </div>
-              <div class="group-5">
-                <div class="overlap-3">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus</div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Invoice</title>
+    <!-- Impor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Impor Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Impor Ikon Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Definisikan grid untuk daftar invoice */
+        .invoice-grid {
+            display: grid;
+            /* Kolom: Produk, Status, Tanggal, Aksi */
+            grid-template-columns: minmax(0, 3fr) minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr);
+            gap: 0.75rem 1rem; 
+            align-items: center;
+        }
+        .invoice-grid-paid {
+             display: grid;
+             /* Kolom: Produk, Kode/Aksi, Status, Tanggal */
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1.5fr);
+            gap: 0.5rem 1rem;
+            align-items: start; /* Align to start for multi-line items */
+        }
+
+        /* Style untuk transisi halus */
+        .invoice-card {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-gray-900">
+
+    <div class="flex h-screen bg-white overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0 flex flex-col justify-between bg-gray-50/75 backdrop-blur-sm p-4 shadow-lg z-20">
+            <div>
+                <!-- Logo -->
+                <div class="mb-10 flex items-center justify-center">
+                    <img src="https://placehold.co/150x40/FFFFFF/333333?text=PETROKIMIA+GRESIK&font=inter" alt="Logo Petrokimia Gresik" class="h-10">
                 </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-6">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-7">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-8">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-9">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-10">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-11">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-12">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-13">
-                <div class="overlap-4">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska Plus, ...</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-14">
-                <div class="overlap-5">
-                  <div class="text-wrapper-6">Phonska</div>
-                  <div class="text-wrapper-6">Phonska</div>
-                </div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="group-15">
-                <div class="text-wrapper-7">Urea</div>
-                <div class="ellipse"></div>
-              </div>
-              <div class="hide"><div class="text-wrapper-8">Hide</div></div>
-              <div class="hide-2"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-3"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-4"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-5"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-6"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-7"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-8"><div class="text-wrapper-8">View More</div></div>
-              <div class="hide-9"><div class="text-wrapper-8">View More</div></div>
-              <div class="last-login">Filed on: 14/MAY/2025</div>
-              <div class="last-login-2">Filed on: 14/MAY/2025</div>
-              <div class="last-login-3">Filed on: 14/MAY/2025</div>
-              <div class="last-login-4">Filed on: 14/MAY/2025</div>
-              <div class="last-login-5">Filed on: 14/MAY/2025</div>
-              <div class="last-login-6">Filed on: 14/MAY/2025</div>
-              <div class="last-login-7">Filed on: 14/MAY/2025</div>
-              <div class="last-login-8">Filed on: 14/MAY/2025</div>
-              <div class="last-login-9">Filed on: 14/MAY/2025</div>
-              <div class="rectangle"></div>
-              <div class="rectangle-2"></div>
-              <div class="rectangle-3"></div>
-              <div class="rectangle-4"></div>
-              <div class="rectangle-5"></div>
-              <div class="rectangle-6"></div>
-              <div class="rectangle-7"></div>
-              <div class="rectangle-8"></div>
-              <div class="rectangle-9"></div>
-              <div class="status-active">
-                <div class="group-16">
-                  <div class="overlap-group-2">
-                    <div class="rectangle-10"></div>
-                    <div class="text-wrapper-9">Verified</div>
-                    <div class="ellipse-2"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-wrapper">
-                <div class="group-17">
-                  <div class="overlap-group-3">
-                    <div class="text-wrapper-10">Waiting</div>
-                    <div class="ellipse-3"></div>
-                  </div>
-                </div>
-              </div>
+                
+                <!-- Menu Navigasi -->
+                <nav class="flex flex-col space-y-2">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-100 text-blue-600 rounded-lg font-semibold border-l-4 border-blue-600">
+                        <i class="fas fa-file-invoice w-6 text-center"></i>
+                        <span>Invoice</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                         <i class="fas fa-comment-dots w-6 text-center"></i>
+                        <span>Order</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                        <i class="fas fa-chart-line w-6 text-center"></i>
+                        <span>Financial Report</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                        <i class="fas fa-th-large w-6 text-center"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </nav>
             </div>
-            <img class="vector-2" src="img/vector-7.svg" />
-          </div>
-          <div class="status-active-2">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
+            
+            <!-- Tombol Kembali -->
+            <div>
+                 <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-gray-200/50 hover:text-gray-900 transition-colors">
+                    <i class="fas fa-arrow-left w-6 text-center"></i>
+                    <span>Back</span>
+                </a>
             </div>
-          </div>
-          <div class="status-active-3">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="flex-1 flex flex-col relative">
+            <!-- Header -->
+            <header class="absolute top-0 left-0 right-0 bg-transparent text-gray-800 p-6 z-10">
+                <div class="flex justify-end items-center">
+                    <div class="flex items-center space-x-4">
+                        <span class="font-semibold text-lg text-white">Hi, I am Azka</span>
+                        <img src="https://placehold.co/40x40/E2E8F0/333333?text=A" alt="Avatar Pengguna" class="h-10 w-10 rounded-full object-cover border-2 border-white">
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Latar Belakang dan Konten Tengah -->
+            <div class="flex-1 flex items-center justify-center text-center text-white relative bg-black">
+                <!-- Gambar Latar Belakang -->
+                <img src="https://images.pexels.com/photos/328771/pexels-photo-328771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                     alt="Gambar latar pabrik industri" 
+                     class="absolute h-full w-full object-cover opacity-40">
+                
+                <!-- Kartu Daftar Invoice -->
+                <div class="relative z-10 bg-white/95 backdrop-blur-sm text-gray-800 rounded-2xl shadow-2xl p-8 w-full max-w-5xl max-h-[90vh] overflow-y-auto">
+                    <h1 class="text-3xl font-bold text-center">Invoice</h1>
+                    <div class="w-24 h-1 bg-teal-400 mx-auto mt-2 mb-8"></div>
+
+                    <div class="space-y-4 text-sm">
+                        <!-- Kontainer untuk Bagian "Paid" / Detail -->
+                        <div id="paid-invoice-container" class="space-y-3 border-b pb-4 mb-4">
+                            <!-- Konten dinamis "Paid" akan masuk di sini -->
+                        </div>
+
+                        <!-- Kontainer untuk Bagian "Not Paid" -->
+                        <div id="not-paid-invoice-container" class="invoice-grid">
+                            <!-- Konten dinamis "Not Paid" akan masuk di sini -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="status-active-4">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
-            </div>
-          </div>
-          <div class="status-active-5">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
-            </div>
-          </div>
-          <div class="status-active-6">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
-            </div>
-          </div>
-          <div class="status-active-7">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
-            </div>
-          </div>
-          <div class="status-active-8">
-            <div class="group-17">
-              <div class="overlap-group-3">
-                <div class="text-wrapper-10">Waiting</div>
-                <div class="ellipse-3"></div>
-              </div>
-            </div>
-          </div>
-          <div class="text-wrapper-11">7</div>
-          <div class="text-wrapper-12">9</div>
-          <div class="text-wrapper-13">12</div>
-          <div class="text-wrapper-14">12</div>
-          <div class="text-wrapper-15">12</div>
-          <div class="text-wrapper-16">12</div>
-          <div class="text-wrapper-17">12</div>
-          <div class="text-wrapper-18">12</div>
-          <div class="text-wrapper-19">12</div>
-          <div class="text-wrapper-20">12</div>
-          <div class="text-wrapper-21">12</div>
-          <div class="text-wrapper-22">Rp600,000</div>
-          <div class="text-wrapper-23">Rp600,000</div>
-          <div class="text-wrapper-24">Rp600,000</div>
-          <div class="text-wrapper-25">Rp600,000, ...</div>
-          <div class="text-wrapper-26">Rp600,000, ...</div>
-          <div class="text-wrapper-27">Rp600,000, ...</div>
-          <div class="text-wrapper-28">Rp600,000, ...</div>
-          <div class="text-wrapper-29">Rp600,000, ...</div>
-          <div class="text-wrapper-30">Rp600,000, ...</div>
-          <div class="text-wrapper-31">Rp600,000, ...</div>
-          <div class="text-wrapper-32">Rp600,000, ...</div>
-          <div class="text-wrapper-33">Rp1,800,000</div>
-          <img class="line" src="img/line-2.svg" />
-          <div class="text-wrapper-34">+</div>
-          <div class="frame-wrapper">
-            <div class="frame">
-              <div class="line-md-home-twotone"><img class="group-18" src="../img/home.svg" /></div>
-              <div class="text-wrapper-35">Dashboard</div>
-            </div>
-          </div>
-          <div class="group-19">
-            <div class="text-wrapper-36">Back</div>
-            <img class="vector-3" src="../img/back vector.svg" />
-          </div>
-        </div>
-        <img class="LOGO-PT-PETROKIMIA" src="../img/LOGO PT PETROKIMIA GRESIK 2.png" />
-        <div class="group-20">
-          <img class="ellipse-4" src="../img/azka.jpg" />
-          <div class="text-wrapper-37">Hi, I am Azka</div>
-        </div>
-      </div>
+        </main>
     </div>
-  </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Data awal untuk semua invoice
+            let invoices = [
+                { 
+                    id: 1,
+                    status: 'Not Paid', // Status awal
+                    date: '14/MAY/2025',
+                    items: [
+                        { name: 'Bahan Kimia 1' },
+                        { name: 'Kimia 2' },
+                        { name: 'Kimia 3' },
+                    ],
+                    invoiceCode: '010109140525',
+                },
+                { id: 2, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+                { id: 3, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+                { id: 4, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+                { id: 5, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+                { id: 6, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+                { id: 7, status: 'Not Paid', date: '14/MAY/2025', items: [{ name: 'Kimia 2, ...' }] },
+            ];
+
+            const paidContainer = document.getElementById('paid-invoice-container');
+            const notPaidContainer = document.getElementById('not-paid-invoice-container');
+            
+            // Fungsi utama untuk merender semua invoice berdasarkan statusnya
+            function renderAllInvoices() {
+                paidContainer.innerHTML = '';
+                notPaidContainer.innerHTML = '';
+
+                invoices.forEach(invoice => {
+                    if (invoice.status === 'Paid') {
+                        paidContainer.innerHTML += renderPaidInvoice(invoice);
+                    } else { // status === 'Not Paid'
+                        notPaidContainer.innerHTML += renderNotPaidInvoice(invoice);
+                    }
+                });
+            }
+
+            // Fungsi untuk membuat HTML untuk invoice yang "Paid" (tampilan detail)
+            function renderPaidInvoice(invoice) {
+                const itemsHtml = invoice.items.map(item => 
+                    `<div class="flex items-center space-x-3 col-span-4">
+                        <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                        <span class="font-semibold">${item.name}</span>
+                    </div>`
+                ).join('');
+                
+                return `
+                <div class="invoice-card">
+                    <div class="invoice-grid-paid">
+                        <!-- Kolom 1: Daftar Item -->
+                        <div class="space-y-2">
+                            ${itemsHtml}
+                        </div>
+
+                        <!-- Kolom 2: Kode & Tombol Invoice -->
+                        <div class="space-y-2 mt-6">
+                             <div class="text-gray-500">${invoice.invoiceCode}</div>
+                             <button class="bg-green-100 text-green-700 font-semibold px-4 py-1 rounded-md text-xs">see invoice</button>
+                        </div>
+
+                        <!-- Kolom 3: Status -->
+                        <div class="flex items-center space-x-2 mt-6">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="font-semibold text-green-500">Paid</span>
+                        </div>
+                        
+                        <!-- Kolom 4: Tanggal & Aksi Hide -->
+                        <div class="text-right self-stretch flex flex-col justify-between">
+                             <div class="text-gray-500 whitespace-nowrap">Filed on: ${invoice.date}</div>
+                             <a href="#" data-id="${invoice.id}" class="hide-btn text-gray-500 hover:text-gray-800 text-xs font-semibold self-end">Hide</a>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }
+
+            // Fungsi untuk membuat HTML untuk invoice yang "Not Paid" (tampilan ringkas)
+            function renderNotPaidInvoice(invoice) {
+                 const item = invoice.items[0]; // Ambil item pertama untuk tampilan ringkas
+                 return `
+                    <div class="contents">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                            <span class="font-semibold">${item.name}</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-circle-notch text-red-500"></i>
+                            <span class="font-semibold text-red-500">not paid</span>
+                        </div>
+                        <div class="text-gray-500 whitespace-nowrap">Filed on: ${invoice.date}</div>
+                        <div class="text-right"><a href="#" data-id="${invoice.id}" class="view-more-btn font-semibold text-blue-600 hover:underline">View More</a></div>
+                    </div>
+                `;
+            }
+
+            // Event listener untuk menangani klik di seluruh area invoice
+            document.querySelector('.max-w-5xl').addEventListener('click', function(e) {
+                const invoiceId = e.target.dataset.id;
+                if (!invoiceId) return;
+
+                // Jika tombol "View More" diklik
+                if (e.target.classList.contains('view-more-btn')) {
+                    e.preventDefault();
+                    const invoice = invoices.find(o => o.id == invoiceId);
+                    if (invoice) {
+                        // Sembunyikan semua invoice yang sedang "Paid"
+                        invoices.forEach(o => { if (o.status === 'Paid') o.status = 'Not Paid'; });
+                        // Tampilkan yang baru sebagai "Paid"
+                        invoice.status = 'Paid';
+                        renderAllInvoices();
+                    }
+                }
+                
+                // Jika tombol "Hide" diklik
+                if (e.target.classList.contains('hide-btn')) {
+                    e.preventDefault();
+                    const invoice = invoices.find(o => o.id == invoiceId);
+                    if (invoice) {
+                        invoice.status = 'Not Paid';
+                        renderAllInvoices();
+                    }
+                }
+            });
+
+            // Render awal saat halaman dimuat
+            renderAllInvoices();
+        });
+    </script>
+
+</body>
 </html>
