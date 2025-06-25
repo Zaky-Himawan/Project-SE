@@ -1,0 +1,840 @@
+.finance-invoice {
+    background-color: rgba(255, 255, 255, 1.0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .finance-invoice .div {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 79%);
+    width: 1456px;
+    height: 826px;
+    position: relative;
+  }
+  
+  .finance-invoice .overlap {
+    position: absolute;
+    width: 1450px;
+    height: 659px;
+    top: 103px;
+    left: 0;
+  }
+  
+  .finance-invoice .mask-group {
+    position: absolute;
+    width: 250px;
+    height: 649px;
+    top: 7px;
+    left: 0;
+    background-color: #dfdcdc;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .finance-invoice .group {
+    position: absolute;
+    width: 160px;
+    height: 25px;
+    top: 75px;
+    left: 42px;
+  }
+  
+  .finance-invoice .img {
+    position: absolute;
+    width: 32px;
+    height: 25px;
+    top: 0;
+    left: 0;
+  }
+  
+  .finance-invoice .text-wrapper {
+    position: absolute;
+    width: 107px;
+    top: 2px;
+    left: 51px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #00849b;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .finance-invoice .group-2 {
+    position: absolute;
+    width: 205px;
+    height: 25px;
+    top: 177px;
+    left: 42px;
+  }
+  
+  .finance-invoice .text-wrapper-2 {
+    position: absolute;
+    width: 152px;
+    top: 2px;
+    left: 51px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .group-3 {
+    position: absolute;
+    width: 178px;
+    height: 25px;
+    top: 126px;
+    left: 42px;
+  }
+  
+  .finance-invoice .text-wrapper-3 {
+    position: absolute;
+    width: 125px;
+    top: 2px;
+    left: 51px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #0d062d;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .group-4 {
+    position: absolute;
+    width: 1440px;
+    height: 659px;
+    top: 0;
+    left: 10px;
+  }
+  
+  .finance-invoice .overlap-group {
+    position: absolute;
+    width: 1104px;
+    height: 649px;
+    top: 10px;
+    left: 278px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+  }
+  
+  .finance-invoice .vector {
+    position: absolute;
+    width: 919px;
+    height: 3px;
+    top: 89px;
+    left: 122px;
+  }
+  
+  .finance-invoice .text-wrapper-4 {
+    position: absolute;
+    width: 697px;
+    top: 20px;
+    left: 244px;
+    font-family: "Heebo-Bold", Helvetica;
+    font-weight: 700;
+    color: #595959;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .vector-2 {
+    position: absolute;
+    width: 1438px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .finance-invoice .frame-wrapper {
+    position: absolute;
+    width: 143px;
+    height: 27px;
+    top: 217px;
+    left: 45px;
+  }
+  
+  .finance-invoice .frame {
+    display: flex;
+    width: 143px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .finance-invoice .line-md-home-twotone {
+    position: relative;
+    width: 26.84px;
+    height: 26.84px;
+  }
+  
+  .finance-invoice .group-5 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    left: 1px;
+  }
+  
+  .finance-invoice .text-wrapper-5 {
+    position: relative;
+    width: 94.81px;
+    height: 22.11px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #0d062d;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .group-6 {
+    position: absolute;
+    width: 138px;
+    height: 24px;
+    top: 603px;
+    left: 55px;
+  }
+  
+  .finance-invoice .text-wrapper-6 {
+    position: absolute;
+    width: 85px;
+    height: 20px;
+    top: 2px;
+    left: 51px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #0d062d;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .vector-3 {
+    position: absolute;
+    width: 27px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .finance-invoice .overlap-wrapper {
+    position: absolute;
+    width: 129px;
+    height: 48px;
+    top: 149px;
+    left: 739px;
+  }
+  
+  .finance-invoice .div-wrapper {
+    position: relative;
+    width: 127px;
+    height: 48px;
+    background-color: #83c29d33;
+    border-radius: 4px;
+  }
+  
+  .finance-invoice .text-wrapper-7 {
+    position: absolute;
+    width: 107px;
+    height: 31px;
+    top: 8px;
+    left: 10px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #67b266;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .group-7 {
+    width: 125px;
+    top: 134px;
+    position: absolute;
+    height: 19px;
+    left: 362px;
+  }
+  
+  .finance-invoice .text-wrapper-8 {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #0d062d;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .finance-invoice .ellipse {
+    height: 8px;
+    top: 5px;
+    left: 0;
+    background-color: #5030e5;
+    border-radius: 4px;
+    position: absolute;
+    width: 8px;
+  }
+  
+  .finance-invoice .group-8 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 265px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-9 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 308px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-10 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 350px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-11 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 392px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-12 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 434px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-13 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 476px;
+    left: 356px;
+  }
+  
+  .finance-invoice .group-14 {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    top: 518px;
+    left: 356px;
+  }
+  
+  .finance-invoice .hide {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 215px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .overlap-2 {
+    position: relative;
+    width: 71px;
+    height: 25px;
+    border-radius: 4px;
+  }
+  
+  .finance-invoice .text-wrapper-9 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .overlap-group-wrapper {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 261px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-2 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 304px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-3 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 347px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-4 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 390px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-5 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 433px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-6 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 476px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-7 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 519px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .hide-8 {
+    position: absolute;
+    width: 73px;
+    height: 25px;
+    top: 562px;
+    left: 1285px;
+  }
+  
+  .finance-invoice .last-login {
+    position: absolute;
+    width: 136px;
+    top: 128px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-2 {
+    top: 266px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-3 {
+    top: 309px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-4 {
+    top: 352px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-5 {
+    top: 395px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-6 {
+    top: 438px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-7 {
+    top: 481px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-8 {
+    top: 524px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .last-login-9 {
+    top: 567px;
+    position: absolute;
+    width: 136px;
+    left: 1037px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--fontsprimary-variant);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .rectangle {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 241px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-2 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 290px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-3 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 333px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-4 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 376px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-5 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 419px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-6 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 462px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-7 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 505px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .rectangle-8 {
+    position: absolute;
+    width: 994px;
+    height: 1px;
+    top: 548px;
+    left: 356px;
+    background-color: #d9d5ec;
+  }
+  
+  .finance-invoice .status-active {
+    position: absolute;
+    width: 85px;
+    height: 19px;
+    top: 163px;
+    left: 1062px;
+  }
+  
+  .finance-invoice .group-15 {
+    width: 92px;
+    height: 19px;
+  }
+  
+  .finance-invoice .overlap-group-2 {
+    position: relative;
+    width: 90px;
+    height: 19px;
+  }
+  
+  .finance-invoice .rectangle-9 {
+    position: absolute;
+    width: 74px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    background-color: #e8f2e6;
+    border-radius: 10px;
+  }
+  
+  .finance-invoice .verified {
+    position: absolute;
+    width: 70px;
+    top: 2px;
+    left: 20px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #5bcd68;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .ellipse-2 {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    top: 7px;
+    left: 6px;
+    background-color: #7dff49;
+    border-radius: 3.81px / 3px;
+  }
+  
+  .finance-invoice .group-wrapper {
+    top: 265px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .group-16 {
+    width: 87px;
+    height: 19px;
+  }
+  
+  .finance-invoice .overlap-group-3 {
+    position: relative;
+    width: 85px;
+    height: 19px;
+    background-color: #ffadae99;
+    border-radius: 10px;
+  }
+  
+  .finance-invoice .text-wrapper-10 {
+    position: absolute;
+    width: 59px;
+    top: 2px;
+    left: 20px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #fa0004;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .finance-invoice .ellipse-3 {
+    height: 6px;
+    top: 7px;
+    left: 6px;
+    background-color: #fa0004;
+    border-radius: 3.81px / 3px;
+    position: absolute;
+    width: 8px;
+  }
+  
+  .finance-invoice .status-active-2 {
+    top: 308px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-3 {
+    top: 352px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-4 {
+    top: 395px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-5 {
+    top: 438px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-6 {
+    top: 481px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-7 {
+    top: 524px;
+    left: 760px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .status-active-8 {
+    top: 564px;
+    left: 761px;
+    position: absolute;
+    width: 85px;
+    height: 19px;
+  }
+  
+  .finance-invoice .group-17 {
+    position: absolute;
+    width: 75px;
+    height: 19px;
+    top: 158px;
+    left: 362px;
+  }
+  
+  .finance-invoice .group-18 {
+    width: 75px;
+    top: 184px;
+    position: absolute;
+    height: 19px;
+    left: 362px;
+  }
+  
+  .finance-invoice .LOGO-PT-PETROKIMIA {
+    position: absolute;
+    width: 153px;
+    height: 62px;
+    top: 16px;
+    left: 29px;
+    object-fit: cover;
+  }
+  
+  .finance-invoice .group-19 {
+    position: absolute;
+    width: 349px;
+    height: 56px;
+    top: 19px;
+    left: 1092px;
+  }
+  
+  .finance-invoice .ellipse-4 {
+    position: absolute;
+    width: 65px;
+    height: 64px;
+    top: 0;
+    left: 286px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .finance-invoice .text-wrapper-11 {
+    position: absolute;
+    width: 256px;
+    top: 2px;
+    left: 0;
+    font-family: "Heebo-Bold", Helvetica;
+    font-weight: 700;
+    color: #595959;
+    font-size: 35px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .backgrounddasar {
+    width: 100%;
+    height: 100%;
+  }
