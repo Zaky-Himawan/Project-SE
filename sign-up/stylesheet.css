@@ -1,0 +1,11 @@
+        /* Menggunakan font Poppins sebagai default */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Gambar latar belakang diatur di sini */
+        .background-container {
+            background-image: url('https://storage.googleapis.com/pkg-portal-bucket/images/news/2023-10/petrokimia-gresik-komitmen-dukung-pengembangan-energi-bersih-tanah-air-lewat-green-hydrogen-green-ammonia/Area-Pabrik-1A-Petrokimia-Gresik.jpeg');
+            background-size: cover;
+            background-position: center;
+        }

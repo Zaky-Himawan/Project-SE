@@ -1,0 +1,24 @@
+/* Menggunakan font Poppins sebagai default */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Gambar latar belakang diatur di sini */
+.background-container {
+    background-image: url('https://storage.googleapis.com/pkg-portal-bucket/images/news/2023-10/petrokimia-gresik-komitmen-dukung-pengembangan-energi-bersih-tanah-air-lewat-green-hydrogen-green-ammonia/Area-Pabrik-1A-Petrokimia-Gresik.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style untuk tombol tab (Customer/Administrator) */
+.tab-btn {
+    transition: background-color 0.3s ease;
+}
+.tab-btn.active {
+    background-color: #CBD5E0; /* gray-400 */
+    color: #1A202C; /* gray-800 */
+}
+.tab-btn.inactive {
+    background-color: #4A5568; /* gray-600 */
+    color: #E2E8F0; /* gray-200 */
+}
