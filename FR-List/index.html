@@ -1,181 +1,236 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="finance-financial">
-      <div class="div">
-        <img class="backgrounddasar" src="../img/Background Petrokimia.jpg" alt="">
-        <div class="overlap">
-          <div class="group">
-            <img class="img" src="../img/kategori.svg" />
-            <div class="text-wrapper">Invoice</div>
-          </div>
-          <div class="group-2">
-            <img class="img" src="../img/message.svg" />
-            <div class="text-wrapper-2">Order</div>
-          </div>
-          <div class="lapkeu-divisi-gen">
-            <div class="frame">
-              <img class="vuesax-bulk-add" src="../img/Plus Square.svg" />
-              <div class="group-3">
-                <img class="img" src="../img/task square.svg" />
-                <div class="text-wrapper-3">Financial Report</div>
-              </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Laporan Keuangan</title>
+    <!-- Impor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Impor Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Impor Ikon Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style untuk sub-menu */
+        .sub-menu a {
+            padding-left: 3.5rem;
+            font-size: 0.875rem;
+        }
+        /* Grid untuk daftar laporan */
+        .report-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
+            gap: 1.5rem 1rem;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-gray-900">
+
+    <div class="flex h-screen bg-white overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0 flex flex-col justify-between bg-gray-50/75 backdrop-blur-sm p-4 shadow-lg z-20">
+            <div>
+                <!-- Logo -->
+                <div class="mb-10 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/pkg-portal-bucket/images/template/logo-PG-agro-trans-small.png" alt="Logo Petrokimia Gresik" class="h-10">
+                </div>
+                
+                <!-- Menu Navigasi -->
+                <nav class="flex flex-col space-y-1">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                        <i class="fas fa-file-invoice w-6 text-center"></i>
+                        <span>Invoice</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                         <i class="fas fa-comment-dots w-6 text-center"></i>
+                        <span>Order</span>
+                    </a>
+                    <!-- Financial Report dengan Sub-menu -->
+                    <div>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-100 text-blue-600 rounded-lg font-semibold border-l-4 border-blue-600">
+                            <i class="fas fa-chart-line w-6 text-center"></i>
+                            <span>Financial Report</span>
+                        </a>
+                        <div id="sub-menu-container" class="sub-menu flex flex-col mt-2 space-y-2 text-gray-500">
+                             <a href="#" data-division="production" class="sub-menu-item flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-cogs w-4 text-center"></i><span>Production</span></a>
+                             <a href="#" data-division="purchasing" class="sub-menu-item flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-shopping-cart w-4 text-center"></i><span>Purchasing</span></a>
+                             <a href="#" data-division="sales_marketing" class="sub-menu-item flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-bullhorn w-4 text-center"></i><span>Sales Marketing</span></a>
+                             <a href="#" data-division="inventory_management" class="sub-menu-item flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-boxes w-4 text-center"></i><span>Inventory Management</span></a>
+                             <a href="#" data-division="finance" class="sub-menu-item flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-dollar-sign w-4 text-center"></i><span>Finance</span></a>
+                             <a href="#" class="flex items-center space-x-3 py-1 transition-colors duration-200 hover:text-blue-600 hover:font-semibold"><i class="fas fa-file-alt w-4 text-center"></i><span>General Reports</span></a>
+                        </div>
+                    </div>
+                     <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                        <i class="fas fa-home w-6 text-center"></i>
+                        <span>Report</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-blue-100 hover:text-blue-600 hover:font-semibold hover:border-l-4 hover:border-blue-600 transition-all duration-200">
+                        <i class="fas fa-th-large w-6 text-center"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </nav>
             </div>
-            <div class="lapkeu-divisi">
-              <div class="frame-2">
-                <img class="img-2" src="../img/Vector.png" />
-                <div class="text-wrapper-4">Production</div>
-              </div>
-              <div class="frame-2">
-                <img class="img-2" src="../img/mdi_trolley-outline.svg" />
-                <div class="text-wrapper-4">Purchasing</div>
-              </div>
-              <div class="frame-3">
-                <img class="vector" src="../img/marketing.svg" />
-                <div class="text-wrapper-5">Sales Marketing</div>
-              </div>
-              <div class="frame-4">
-                <img class="vector-2" src="../img/inventory.svg" />
-                <div class="text-wrapper-6">Inventory Management</div>
-              </div>
-              <div class="frame-4">
-                <img class="vector-3" src="../img/finance.svg" />
-                <div class="text-wrapper-7">Finance</div>
-              </div>
-              <div class="frame-5">
-                <img class="group-4" src="../img/hand-money-svgrepo-com.svg" />
-                <div class="text-wrapper-8">General Reports</div>
-              </div>
+            
+            <!-- Tombol Kembali -->
+            <div>
+                 <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 rounded-lg hover:bg-gray-200/50 hover:text-gray-900 transition-colors">
+                    <i class="fas fa-arrow-left w-6 text-center"></i>
+                    <span>Back</span>
+                </a>
             </div>
-          </div>
-          <div class="frame-6">
-            <img class="vuesax-linear" src="../img/setting-2-svgrepo-com.svg" />
-            <div class="text-wrapper-9">Report</div>
-          </div>
-          <div class="group-wrapper">
-            <div class="frame-wrapper">
-              <div class="frame-7">
-                <div class="line-md-home-twotone"><img class="group-5" src="../img/home.svg" /></div>
-                <div class="text-wrapper-10">Dashboard</div>
-              </div>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="flex-1 flex flex-col relative">
+            <!-- Header -->
+            <header class="absolute top-0 left-0 right-0 bg-transparent text-gray-800 p-6 z-10">
+                <div class="flex justify-end items-center">
+                    <div class="flex items-center space-x-4">
+                        <span class="font-semibold text-lg text-white">Hi, I am Azka</span>
+                        <img src="https://placehold.co/40x40/E2E8F0/333333?text=A" alt="Avatar Pengguna" class="h-10 w-10 rounded-full object-cover border-2 border-white">
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Latar Belakang dan Konten Tengah -->
+            <div class="flex-1 flex items-center justify-center text-center text-white relative bg-black">
+                <!-- Gambar Latar Belakang -->
+                <img src="data:image/jpeg;base64,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" 
+                     alt="Gambar latar pabrik industri" 
+                     class="absolute h-full w-full object-cover opacity-40">
+                
+                <!-- Kartu Dasbor Financial Report -->
+                <div class="relative z-10 bg-white/95 backdrop-blur-sm text-gray-800 rounded-2xl shadow-2xl p-8 md:p-12 w-full max-w-4xl">
+                    <h1 class="text-3xl font-bold text-center">Financial Report</h1>
+                    <div class="w-full h-1 bg-teal-400 mx-auto mt-2 mb-8 rounded-full"></div>
+
+                    <!-- Kontainer untuk daftar laporan dinamis -->
+                    <div id="report-list-container" class="report-grid text-left text-sm">
+                        <!-- Data laporan akan diisi oleh JavaScript di sini -->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="group-6">
-            <div class="text-wrapper-11">Back</div>
-            <img class="vector-4" src="../img/back vector.svg" />
-          </div>
-        </div>
-        <img class="LOGO-PT-PETROKIMIA" src="../img/LOGO PT PETROKIMIA GRESIK 2.png" />
-        <div class="group-7">
-          <img class="ellipse" src="../img/azka.jpg" />
-          <div class="text-wrapper-12">Hi, I am Azka</div>
-        </div>
-        <div class="overlap-group">
-          <div class="overlap-2">
-            <img class="vector-5" src="img/vector-11.svg" />
-            <div class="text-wrapper-13">Financial Report</div>
-          </div>
-          <div class="overlap-3">
-            <img class="ic-outline-download" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-14">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="overlap-4">
-            <div class="charm-download-wrapper"><img class="charm-download" src="../img/download-svgrepo-com.svg" /></div>
-            <div class="overlap-group-wrapper">
-              <div class="overlap-5"><div class="text-wrapper-15">Download File</div></div>
-            </div>
-          </div>
-          <div class="overlap-6">
-            <img class="ic-outline-download" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-14">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="overlap-7">
-            <img class="ic-outline-download" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-14">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="overlap-8">
-            <img class="ic-outline-download" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-14">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="overlap-9">
-            <img class="ic-outline-download" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-14">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="overlap-10">
-            <img class="ic-outline-download-2" src="../img/check-good-yes-svgrepo-com.svg" />
-            <div class="overlap-group-wrapper">
-              <div class="div-wrapper"><div class="text-wrapper-15">File Downloaded</div></div>
-            </div>
-          </div>
-          <div class="group-8">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-9">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-10">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-11">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-12">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-13">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="group-14">
-            <div class="text-wrapper-16">Finance</div>
-            <div class="ellipse-2"></div>
-          </div>
-          <div class="last-login">Filed on: 14/MAY/2025</div>
-          <div class="last-login-2">Filed on: 14/MAY/2025</div>
-          <div class="last-login-3">Filed on: 14/MAY/2025</div>
-          <div class="last-login-4">Filed on: 14/MAY/2025</div>
-          <div class="last-login-5">Filed on: 14/MAY/2025</div>
-          <div class="last-login-6">Filed on: 14/MAY/2025</div>
-          <div class="last-login-7">Filed on: 14/MAY/2025</div>
-          <div class="rectangle"></div>
-          <div class="rectangle-2"></div>
-          <div class="rectangle-3"></div>
-          <div class="rectangle-4"></div>
-          <div class="rectangle-5"></div>
-          <div class="rectangle-6"></div>
-          <div class="rectangle-7"></div>
-          <div class="text-wrapper-17">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-18">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-19">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-20">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-21">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-22">inezmaylaf@gmail.com</div>
-          <div class="text-wrapper-23">inezmaylaf@gmail.com</div>
-        </div>
-        <img class="vector-6" src="img/vector-7.svg" />
-      </div>
+        </main>
     </div>
-  </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- DATA ---
+            const reportData = {
+                production: [
+                    { id: 1, dept: 'Production', email: 'factory.head@example.com', status: 'downloaded', date: '22/MAY/2025' },
+                    { id: 2, dept: 'Production', email: 'factory.head@example.com', status: 'available', date: '21/MAY/2025' },
+                    { id: 3, dept: 'Production', email: 'factory.head@example.com', status: 'downloaded', date: '20/MAY/2025' },
+                ],
+                purchasing: [
+                    { id: 1, dept: 'Purchasing', email: 'procurement@example.com', status: 'downloaded', date: '25/MAY/2025' },
+                ],
+                sales_marketing: [
+                    { id: 1, dept: 'Sales', email: 'sales.lead@example.com', status: 'available', date: '19/MAY/2025' },
+                    { id: 2, dept: 'Sales', email: 'sales.lead@example.com', status: 'downloaded', date: '18/MAY/2025' },
+                ],
+                inventory_management: [
+                    { id: 1, dept: 'Inventory', email: 'warehouse.mgr@example.com', status: 'downloaded', date: '24/MAY/2025' },
+                    { id: 2, dept: 'Inventory', email: 'warehouse.mgr@example.com', status: 'downloaded', date: '23/MAY/2025' },
+                ],
+                finance: [
+                    { id: 1, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '14/MAY/2025' },
+                    { id: 2, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'available', date: '14/MAY/2025' },
+                    { id: 3, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '13/MAY/2025' },
+                    { id: 4, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '12/MAY/2025' },
+                    { id: 5, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '11/MAY/2025' },
+                    { id: 6, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '10/MAY/2025' },
+                    { id: 7, dept: 'Finance', email: 'inezmaylaf@gmail.com', status: 'downloaded', date: '09/MAY/2025' },
+                ]
+            };
+
+            // --- ELEMEN DOM ---
+            const reportListContainer = document.getElementById('report-list-container');
+            const subMenuContainer = document.getElementById('sub-menu-container');
+            let currentDivision = 'finance'; // Menyimpan divisi yang sedang aktif
+
+            // --- FUNGSI ---
+            function renderDashboard(division) {
+                currentDivision = division; // Update divisi aktif
+                // 1. Update Sub-menu Aktif
+                subMenuContainer.querySelectorAll('.sub-menu-item').forEach(item => {
+                    if (item.dataset.division === division) {
+                        item.classList.add('text-blue-600', 'font-semibold');
+                    } else {
+                        item.classList.remove('text-blue-600', 'font-semibold');
+                    }
+                });
+
+                // 2. Kosongkan daftar saat ini
+                reportListContainer.innerHTML = '';
+                
+                // 3. Ambil data untuk divisi yang dipilih
+                const data = reportData[division] || [];
+
+                // 4. Buat dan masukkan HTML untuk setiap laporan
+                if (data.length > 0) {
+                    data.forEach(report => {
+                        const buttonClass = report.status === 'downloaded' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+                        const buttonIcon = report.status === 'downloaded' ? 'fa-check' : 'fa-download';
+                        const buttonText = report.status === 'downloaded' ? 'File Downloaded' : 'Download File';
+                        
+                        const downloadButton = `<button data-id="${report.id}" data-division="${division}" class="download-btn w-full ${buttonClass} font-semibold px-2 py-1.5 rounded-md text-xs flex items-center justify-center gap-2"><i class="fas ${buttonIcon}"></i>${buttonText}</button>`;
+
+                        const reportRowHtml = `
+                            <div class="flex items-center space-x-3">
+                                <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                                <span class="font-semibold">${report.dept}</span>
+                            </div>
+                            <div>${report.email}</div>
+                            <div>${downloadButton}</div>
+                            <div class="text-gray-500 whitespace-nowrap">Filed on: ${report.date}</div>
+                        `;
+                        reportListContainer.innerHTML += reportRowHtml;
+                    });
+                } else {
+                    reportListContainer.innerHTML = '<p class="col-span-4 text-center text-gray-500">Tidak ada laporan untuk divisi ini.</p>';
+                }
+            }
+
+            // --- EVENT LISTENERS ---
+            subMenuContainer.addEventListener('click', function(e) {
+                const targetLink = e.target.closest('.sub-menu-item');
+                if (targetLink) {
+                    e.preventDefault();
+                    const division = targetLink.dataset.division;
+                    if (division) {
+                        renderDashboard(division);
+                    }
+                }
+            });
+
+            reportListContainer.addEventListener('click', function(e) {
+                const downloadBtn = e.target.closest('.download-btn');
+                if (downloadBtn) {
+                    const reportId = parseInt(downloadBtn.dataset.id);
+                    const division = downloadBtn.dataset.division;
+                    
+                    // Cari laporan di dalam data
+                    const report = reportData[division]?.find(r => r.id === reportId);
+
+                    // Jika laporan ditemukan dan statusnya 'available', ubah statusnya
+                    if (report && report.status === 'available') {
+                        report.status = 'downloaded';
+                        // Render ulang dashboard untuk divisi yang sedang aktif
+                        renderDashboard(currentDivision);
+                    }
+                }
+            });
+
+            // --- RENDER AWAL ---
+            renderDashboard(currentDivision);
+        });
+    </script>
+</body>
 </html>
