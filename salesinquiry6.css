@@ -1,0 +1,617 @@
+.sales-and-marketing-sales-inquiry-detail,
+/*.sales-and-marketing-sales-inquiry-detail * {
+  box-sizing: border-box;
+}*/
+.sales-and-marketing-sales-inquiry-detail {
+width: 1280px;
+height: 720px;
+  position: absolute;
+  overflow: auto;
+}
+.logo-pt-petrokimia-gresik-2 {
+  width: 153px;
+  height: 62px;
+  position: absolute;
+  left: 29px;
+  top: 16px;
+  object-fit: cover;
+  aspect-ratio: 153/62;
+}
+.group-52 {
+  position: absolute;
+  inset: 0;
+}
+.vuesax-linear-setting-2 {
+  width: 31.79px;
+  height: 24.97px;
+  position: absolute;
+  left: 46px;
+  top: 375.03px;
+}
+.vuesax-linear-setting-22 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.report {
+  color: #0d062d;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 97.67px;
+  top: 377.11px;
+  width: 84.79px;
+  height: 19.77px;
+}
+.group-664 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-2 {
+  width: 57px;
+  height: 56px;
+  position: absolute;
+  left: 1000px;
+  top: 19px;
+  overflow: visible;
+  object-fit: cover;
+}
+.hi-i-am-azka {
+  color: #595959;
+  text-align: right;
+  font-family: "Heebo-Bold", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  position: absolute;
+  left: 900px;
+  top: 21px;
+  width: 256px;
+  height: 42px;
+}
+.rectangle-1057 {
+  background: #f5f5f5;
+  border-radius: 20px;
+  width: 950px;
+  height: 613px;
+  position: absolute;
+  left: 265px;
+  top: 85px;
+}
+.vector-11 {
+  width: 919.05px;
+  height: 0px;
+  position: absolute;
+  left: 405px;
+  top: 200.99px;
+  transform: translate(0px, -1.5px);
+  overflow: visible;
+}
+.sales-inquiry {
+  color: #0d062d;
+  text-align: middle;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  position: absolute;
+  left: 670px;
+  top: 128px;
+
+}
+.sales-inquiry2 {
+    z-index: 20;
+  color: #00849c;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 98px;
+  top: 171px;
+  width: 107px;
+  height: 17px;
+}
+.mask-group {
+  height: 612px;
+  width: 245px;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px 15px 15px 0px;
+}
+.logo-pt-petrokimia-gresik-3 {
+  width: 153px;
+  height: 62px;
+  position: absolute;
+  left: 29px;
+  top: 16px;
+  object-fit: cover;
+  aspect-ratio: 153/62;
+}
+.group-665 {
+  position: absolute;
+  inset: 0;
+}
+.vuesax-outline-category {
+  width: 31.79px;
+  height: 24.97px;
+  position: absolute;
+  left: 47.32px;
+  top: 169px;
+}
+.vuesax-outline-category2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.sales-inquiry2 {
+    z-index: 20;
+  color: #00849c;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 98px;
+  top: 171px;
+  width: 107px;
+  height: 17px;
+}
+.group-666 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-593 {
+    background: #d9d5ec;
+    width: 68.27%;
+    height: 0.12%;
+    position: absolute;
+    right: 7.28%;
+    left: 24.45%;
+    bottom: 42.25%;
+    top: 200px;
+}
+.vuesax-linear-task-square {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 47.32px;
+  top: 270.97px;
+}
+.vuesax-linear-task-square2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.confirmation-customer {
+  color: #0d062d;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 98px;
+  top: 273px;
+  width: 113px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-667 {
+  position: absolute;
+  inset: 0;
+}
+.vuesax-linear-message {
+  width: 31.79px;
+  height: 24.97px;
+  position: absolute;
+  left: 47.32px;
+  top: 219.99px;
+}
+.vuesax-linear-message2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.stock-update {
+  color: #0d062d;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 98px;
+  top: 222px;
+  width: 125px;
+  height: 21px;
+}
+.group-669 {
+  position: absolute;
+  inset: 0;
+}
+.vuesax-linear-setting-23 {
+  width: 31.79px;
+  height: 24.97px;
+  position: absolute;
+  left: 46px;
+  top: 334.03px;
+}
+.vuesax-linear-setting-24 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.report2 {
+  color: #0d062d;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 97.67px;
+  top: 336.11px;
+  width: 84.79px;
+  height: 19.77px;
+}
+.group-670 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-22 {
+  width: 57px;
+  height: 56px;
+  position: absolute;
+  left: 1190px;
+  top: 19px;
+  overflow: visible;
+  object-fit: cover;
+}
+.vector-13 {
+  width: 919.05px;
+  height: 0px;
+  position: absolute;
+  left: 405px;
+  top: 200.99px;
+  transform: translate(0px, -1.5px);
+  overflow: visible;
+}
+.group-682 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-59 {
+  background: #d9d5ec;
+  width: 68.27%;
+  height: 0.12%;
+  position: absolute;
+  right: 6.87%;
+  left: 24.86%;
+  bottom: 26.88%;
+  top: 470px;
+}
+.rectangle-93 {
+  border-radius: 4px;
+  width: 4.88%;
+  height: 3.03%;
+  position: absolute;
+  right: 7.49%;
+  left: 87.64%;
+  bottom: 29.18%;
+  top: 67.8%;
+}
+.group-687 {
+  width: 175px;
+  height: 32px;
+  position: static;
+}
+.rectangle-1091 {
+    z-index: 11;
+  background: #3699ab;
+  border-radius: 10px;
+  width: 175px;
+  height: 32px;
+  position: absolute;
+  left: 652px;
+  top: -242px;
+}
+.status-active {
+  width: 5.84%;
+  height: 2.3%;
+  position: absolute;
+  right: 44.71%;
+  left: 49.45%;
+  bottom: 29.54%;
+  top: 425px;
+}
+.group-67 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-67 {
+  background: #e6e6f2;
+  border-radius: 10px;
+  width: 86.57%;
+  height: 100%;
+  position: absolute;
+  right: 13.43%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.group-689 {
+  width: 299px;
+  height: 35px;
+  top: -100px;
+  position: static;
+}
+
+.group-6872 {
+  position: absolute;
+  inset: 0;
+}
+.back {
+  color: #0d062d;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 101px;
+  top: 605px;
+  width: 84.79px;
+  height: 19.77px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector {
+  width: 1.85%;
+  height: 2.91%;
+  position: absolute;
+  right: 92.86%;
+  left: 5.29%;
+  bottom: 11.74%;
+  top: 85.35%;
+  overflow: visible;
+}
+.frame-795,
+.frame-795 * {
+  box-sizing: border-box;
+}
+.frame-795 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  row-gap: 26px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: absolute;
+  top: 210px;
+  left: 300px;
+}
+.frame-794 {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 10px;
+  padding: 4px 29px 4px 29px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 410px;
+  height: 37px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.division {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Heebo-ExtraLight", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-793 {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 10px;
+  padding: 4px 29px 4px 29px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 440px;
+  height: 37px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.email-administrator {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Heebo-ExtraLight", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-791 {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 10px;
+  padding: 3px 30px 3px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 880px;
+  height: 37px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.periode-laporan-keuangan-mm-yyyy {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: "Heebo-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-796,
+.frame-796 * {
+  box-sizing: border-box;
+}
+.frame-796 {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 330px;
+  left: 515px;
+}
+.frame-792 {
+  background: #e0e0e0;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #adadad;
+  border-width: 5px;
+  padding: 60px 2px 60px 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 252px;
+  position: relative;
+  box-shadow: 0px 0px 45.9px -3px rgba(0, 0, 0, 0.25);
+}
+.drag-and-drop-your-file-here-or-browse-to-upload {
+  text-align: center;
+  font-family: "Heebo-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  width: 378px;
+  height: 88px;
+}
+.drag-and-drop-your-file-here-or-browse-to-upload-span {
+  color: #595959;
+}
+.drag-and-drop-your-file-here-or-browse-to-upload-span2 {
+  color: #00849c;
+}
+.file-must-be-xslx-xsl-csv {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Heebo-ExtraLight", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+  width: 420.37px;
+  height: 41.16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-790 {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 14px 8px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 178px;
+  height: 48px;
+  position: relative;
+  box-shadow: 0px -2px 10px -12px rgba(37, 40, 38, 1);
+}
+.submit {
+  color: #4b4b4b;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transparent-link {
+  display: block; /* Pastikan bukan display: none */
+  width: 95px; /* atau lebar tertentu */
+  height: 10px; /* atau tinggi tertentu */
+  position: absolute; /* jika perlu menyesuaikan posisi */
+    left: 98px;
+    top: 176px;
+  z-index: 20; /* pastikan lebih tinggi dari elemen lain */
+}
+
+.transparent-link2{
+  display: block; /* Pastikan bukan display: none */
+  width: 95px; /* atau lebar tertentu */
+  height: 12px; /* atau tinggi tertentu */
+  position: absolute; /* jika perlu menyesuaikan posisi */
+    left: 98px;
+    top: 226px;
+  z-index: 10; /* pastikan lebih tinggi dari elemen lain */
+}
+.transparent-link3 {
+  display: block; /* Pastikan bukan display: none */
+  width: 95px; /* atau lebar tertentu */
+  height: 40px; /* atau tinggi tertentu */
+  position: absolute; /* jika perlu menyesuaikan posisi */
+    left: 98px;
+    top: 274px;
+  z-index: 10; /* pastikan lebih tinggi dari elemen lain */
+}
+.transparent-link4 {
+  display: block; /* Pastikan bukan display: none */
+  width: 95px; /* atau lebar tertentu */
+  height: 10px; /* atau tinggi tertentu */
+  position: absolute; /* jika perlu menyesuaikan posisi */
+    left: 98px;
+    top: 340px;
+  z-index: 20; /* pastikan lebih tinggi dari elemen lain */
+}
+.transparent-link5 {
+    display: block; /* Pastikan bukan display: none */
+  width: 95px; /* atau lebar tertentu */
+  height: 30px; /* atau tinggi tertentu */
+  position: absolute; /* jika perlu menyesuaikan posisi */
+    left: 75px;
+    top: 600px;
+  z-index: 20; /* pastikan lebih tinggi dari elemen lain */
+}
